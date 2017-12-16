@@ -39,22 +39,6 @@ public class Zip {
     }
 
 
-    public void main(String[] args) {
-        String dirPath = args[0];
-        Path sourceDir = Paths.get(dirPath);
-
-        try {
-            String zipFileName = dirPath.concat(".zip");
-            zos = new ZipOutputStream(new FileOutputStream(zipFileName));
-
-            Files.walkFileTree(sourceDir, (FileVisitor<? super Path>) new Zip(sourceDir));
-
-            zos.close();
-        } catch (IOException ex) {
-            System.err.println("I/O Error: " + ex);
-        }
-    }
-
 
 
     private void zipFile(String filePath) {
