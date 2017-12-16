@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane minHeight="600.0" minWidth="800.0" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="OpenFile.OpenFileController">
+   <center>
+      <AnchorPane minHeight="550.0" minWidth="800.0" prefHeight="550.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextArea fx:id="mainTextArea" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+         </children>
+      </AnchorPane>
+   </center>
+   <bottom>
+      <Pane>
+         <children>
+            <HBox>
+               <children>
+                  <Button fx:id="btnExit" mnemonicParsing="false" onAction="#setOnActionBtnExit" text="Exit" />
+                  <Button fx:id="btnSave" mnemonicParsing="false" onAction="#setOnActionBtnSave" text="Save" BorderPane.alignment="CENTER" />
+               </children>
+            </HBox>
+         </children>
+      </Pane>
+   </bottom>
+</BorderPane>

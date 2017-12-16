@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.SepiaTone?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="EnterFormRegWindow.RegWindowController">
+   <children>
+      <ScrollPane fx:id="scrollePane" hbarPolicy="NEVER" prefHeight="600.0" prefWidth="800.0" vbarPolicy="ALWAYS" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <content>
+            <AnchorPane prefHeight="946.0" prefWidth="800.0">
+               <children>
+                  <TextField fx:id="textFieldName" layoutX="52.0" layoutY="83.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" onAction="#Init" prefHeight="40.0" prefWidth="400.0" promptText="Name:" AnchorPane.leftAnchor="52.0">
+                     <effect>
+                        <Glow />
+                     </effect>
+                  </TextField>
+                  <TextField fx:id="textFieldSurname" layoutX="52.0" layoutY="138.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" onAction="#Init" prefHeight="40.0" prefWidth="400.0" promptText="Surname:">
+                     <effect>
+                        <Glow />
+                     </effect>
+                  </TextField>
+                  <TextField fx:id="textFieldMail" layoutX="52.0" layoutY="193.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" onAction="#Init" prefHeight="40.0" prefWidth="400.0" promptText="Email:">
+                     <effect>
+                        <Glow />
+                     </effect>
+                  </TextField>
+                  <TextField fx:id="textFieldMobPhone" layoutX="52.0" layoutY="248.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" onAction="#Init" prefHeight="40.0" prefWidth="400.0" promptText="Mobile phone:">
+                     <effect>
+                        <Glow />
+                     </effect>
+                  </TextField>
+                  <TextField fx:id="textFieldWorkPhone" layoutX="52.0" layoutY="293.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" onAction="#Init" prefHeight="40.0" prefWidth="400.0" promptText="Work phone:">
+                     <effect>
+                        <Glow />
+                     </effect>
+                  </TextField>
+                  <PasswordField fx:id="passField" layoutX="52.0" layoutY="348.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" onAction="#Init" prefHeight="40.0" prefWidth="400.0" promptText="Password:">
+                     <effect>
+                        <Glow />
+                     </effect>
+                  </PasswordField>
+                  <Button fx:id="buttonGenPass" layoutX="52.0" layoutY="403.0" minWidth="-Infinity" mnemonicParsing="false" onAction="#Init" text="Generation password" />
+                  <TextField fx:id="passwordLengthField" layoutX="200" layoutY="403.0" minWidth="-Infinity" onAction="#Init" promptText="Password length:">
+                     <effect>
+                        <Glow />
+                     </effect>
+                  </TextField>
+                  <TextField fx:id="textFieldTolLvl" layoutX="52.0" layoutY="458.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" onAction="#Init" prefHeight="40.0" prefWidth="400.0" promptText="Tolerance level:">
+                     <effect>
+                        <Glow />
+                     </effect>
+                  </TextField>
+                  <TextArea fx:id="textAreaOthInf" layoutX="52.0" layoutY="503.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="117.0" prefWidth="400.0" promptText="Other information:">
+                     <effect>
+                        <Glow />
+                     </effect>
+                  </TextArea>
+                  <DatePicker fx:id="datePickerBirth" layoutX="52.0" layoutY="634.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" onAction="#Init" prefHeight="40.0" prefWidth="400.0" promptText="Date of birth:">
+                     <effect>
+                        <Glow />
+                     </effect>
+                  </DatePicker>
+                  <DatePicker fx:id="datePickerReg" layoutX="52.0" layoutY="689.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" onAction="#Init" prefHeight="40.0" prefWidth="400.0" promptText="Date of registration:">
+                     <effect>
+                        <Glow />
+                     </effect>
+                  </DatePicker>
+                  <TextField fx:id="textFieldId" layoutX="52.0" layoutY="744.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" onAction="#Init" prefHeight="40.0" prefWidth="400.0" promptText="ID:">
+                     <effect>
+                        <Glow />
+                     </effect>
+                  </TextField>
+                  <Button fx:id="buttonReg" layoutX="52.0" layoutY="901.0" minWidth="-Infinity" mnemonicParsing="false" onAction="#Init" prefHeight="40.0" prefWidth="120.0" text="Registration" AnchorPane.bottomAnchor="55.0" />
+                  <Button fx:id="buttonCancel" layoutX="291.0" layoutY="901.0" minWidth="-Infinity" mnemonicParsing="false" onAction="#Init" prefHeight="40.0" prefWidth="120.0" text="Cancel" AnchorPane.bottomAnchor="55.0" />
+                  <Label fx:id="labelState" layoutX="122.0" layoutY="744.0" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="40.0" prefWidth="224.0">
+                     <effect>
+                        <SepiaTone />
+                     </effect>
+                  </Label>
+                  <Label fx:id="labelName" alignment="CENTER" layoutX="504.0" layoutY="83.0" prefHeight="30.0" prefWidth="200.0" textAlignment="CENTER" textFill="RED" AnchorPane.rightAnchor="53.0" />
+                  <Label fx:id="labelSurname" alignment="CENTER" layoutX="504.0" layoutY="138.0" prefHeight="30.0" prefWidth="200.0" textAlignment="CENTER" textFill="RED" AnchorPane.rightAnchor="53.0" />
+                  <Label fx:id="labelLog" alignment="CENTER" layoutX="504.0" layoutY="193.0" prefHeight="30.0" prefWidth="200.0" textAlignment="CENTER" textFill="RED" AnchorPane.rightAnchor="53.0" />
+                  <Label fx:id="labelEmail" alignment="CENTER" layoutX="504.0" layoutY="248.0" prefHeight="30.0" prefWidth="200.0" textAlignment="CENTER" textFill="RED" AnchorPane.rightAnchor="53.0" />
+                  <Label fx:id="labelMobPhone" alignment="CENTER" layoutX="504.0" layoutY="293.0" prefHeight="30.0" prefWidth="200.0" textAlignment="CENTER" textFill="RED" AnchorPane.rightAnchor="53.0" />
+                  <Label fx:id="labelWorPh" alignment="CENTER" layoutX="504.0" layoutY="348.0" prefHeight="30.0" prefWidth="200.0" textAlignment="CENTER" textFill="RED" AnchorPane.rightAnchor="53.0" />
+                  <Label fx:id="labelPass" alignment="CENTER" layoutX="504.0" layoutY="403.0" prefHeight="30.0" prefWidth="200.0" textAlignment="CENTER" textFill="RED" AnchorPane.rightAnchor="53.0" />
+                  <Label fx:id="labelTolLvl" alignment="CENTER" layoutX="497.0" layoutY="458.0" prefHeight="30.0" prefWidth="200.0" textAlignment="CENTER" textFill="RED" AnchorPane.rightAnchor="60.0" />
+                  <Label fx:id="labelOtherInf" alignment="CENTER" layoutX="497.0" layoutY="503.0" prefHeight="30.0" prefWidth="200.0" textAlignment="CENTER" textFill="RED" AnchorPane.rightAnchor="60.0" />
+                  <Label fx:id="labelDatBirth" alignment="CENTER" layoutX="497.0" layoutY="634.0" prefHeight="30.0" prefWidth="200.0" textAlignment="CENTER" textFill="RED" AnchorPane.rightAnchor="60.0" />
+                  <Label fx:id="labelDateReg" alignment="CENTER" layoutX="497.0" layoutY="689.0" prefHeight="30.0" prefWidth="200.0" textAlignment="CENTER" textFill="RED" AnchorPane.rightAnchor="60.0" />
+                  <Label fx:id="labelId" alignment="CENTER" layoutX="497.0" layoutY="744.0" prefHeight="30.0" prefWidth="200.0" textAlignment="CENTER" textFill="RED" AnchorPane.rightAnchor="60.0" />
+               </children>
+               <opaqueInsets>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </opaqueInsets>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

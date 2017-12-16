@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="120.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ModelWindows.CreateFileController">
+   <children>
+      <Label layoutX="28.0" layoutY="14.0" text="Name" />
+      <Label layoutX="200.0" layoutY="14.0" text="Type" />
+      <TextField fx:id="textName" layoutX="28.0" layoutY="31.0" />
+      <TextField fx:id="textType" layoutX="200.0" layoutY="31.0" />
+      <Button fx:id="btnCancel" layoutX="334.0" layoutY="74.0" mnemonicParsing="false" onAction="#setOnActionBtnCancel" prefWidth="60.0" text="Cancel" />
+      <Button fx:id="btnOk" layoutX="264.0" layoutY="74.0" mnemonicParsing="false" onAction="#setOnActionBtnOk" prefHeight="25.0" prefWidth="60.0" text="Ok" />
+      <Label fx:id="labelSuccess" layoutX="31.0" layoutY="80.0" />
+   </children>
+</AnchorPane>
